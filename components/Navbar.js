@@ -2,14 +2,13 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="container flex flex-wrap justify-between items-center mx-auto md:max-w-5xl">
-      <p>filippobrigati</p>
-      <div>
-        <ul className="flex flex-row space-x-8">
-          <li>home</li>
-          <li>blog</li>
-          <li>contact</li>
-        </ul>
+    <div className="row max-w-5xl m-auto py-6 px-8 sm:py-8">
+      <div className="grid grid-cols-2">
+        <div className="col-span-2 flex justify-end gap-6">
+          <Link href="/project"><a className="">About me</a></Link>
+          <Link href="/project"><a className="">Project</a></Link>
+          <Link href="/project"><a className="">Contact</a></Link>
+        </div>
       </div>
     </div>
   );
