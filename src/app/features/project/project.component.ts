@@ -7,6 +7,7 @@ import { GithubService } from 'src/app/core/services/github.service';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
+  isLoading = true;
 
   constructor(
     public githubService: GithubService
@@ -15,6 +16,9 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
     this.githubService.getRepos().subscribe((d) => {
       this.githubService.repos = d;
+      this.isLoading = false;
+    }, (err) => {
+      alert("Error: "+err);
     });
   }
 

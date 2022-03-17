@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './features/home/home.component';
 import { ProjectComponent } from './features/project/project.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { Page404Component } from './features/page404/page404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectComponent,
-    NavbarComponent
+    NavbarComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
