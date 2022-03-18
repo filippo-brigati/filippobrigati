@@ -126,7 +126,7 @@ export default function Home({ projects }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
   const res = await fetch("https://api.github.com/users/filippo-brigati/repos");
   const projects = await res.json();
