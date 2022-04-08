@@ -33,11 +33,11 @@ export default function Home({ projects }) {
         />
       </Head>
       <div className="grid grid-cols-3 gap-x-10">
-        <div className="col-span-3 sm:col-span-2 mt-3">
-          <span className="font-base text-gray-700 text-lg">About me</span>
+        <div className="col-span-3 sm:col-span-2 mt-1">
+          <span className="font-base text-gray-700 dark:text-white text-lg">About me</span>
         </div>
         <div className="col-span-3 sm:col-span-2 mt-2">
-          <p className="text-base text-gray-800 leading-relaxed">
+          <p className="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
             Hi, my name is{" "}
             <span className="font-semibold">Filippo Brigati</span>, i am {age}{" "}
             years old. I like developing things for the web, I also like travel,
@@ -45,7 +45,7 @@ export default function Home({ projects }) {
           </p>
         </div>
         <div className="col-span-3 sm:col-span-2 mt-4">
-          <p className="text-base text-gray-800 leading-relaxed">
+          <p className="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
             Currently i am using{" "}
             <span className="font-semibold">AngularJS</span> fontend side and{" "}
             <span className="font-semibold">.NET</span> for backend, i also
@@ -58,7 +58,7 @@ export default function Home({ projects }) {
           </p>
         </div>
         <div className="col-span-3 sm:col-span-2 mt-4">
-          <p className="text-base text-gray-800 leading-relaxed">
+          <p className="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
             Now i am working as a software Developer at{" "}
             <a
               target="_blank"
@@ -72,7 +72,7 @@ export default function Home({ projects }) {
         </div>
         <div className="col-span-3 mt-4">
           <div className="flex flex-row gap-x-5">
-            <span className="text-slate-900">
+            <span className="text-slate-900 dark:text-white">
               <a
                 target="_blank"
                 href="https://github.com/filippo-brigati"
@@ -114,7 +114,7 @@ export default function Home({ projects }) {
                 href="mailto:filippobrigati2@gmail.com"
                 rel="noreferrer"
               >
-                <span className="px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">
+                <span className="px-2 py-1 text-green-800 dark:text-green-100 text-xs font-medium bg-green-100 dark:bg-green-700 rounded-full">
                   Send Email
                 </span>
               </a>
@@ -126,13 +126,13 @@ export default function Home({ projects }) {
             className="absolute inset-0 flex items-center"
             aria-hidden="true"
           >
-            <div className="w-full border-t border-gray-300"></div>
+            <div className="w-full border-t border-gray-300 dark:border-white"></div>
           </div>
           <div className="relative flex justify-center">
-            <span className="px-2 bg-white text-sm text-gray-500">
+            <span className="px-2 bg-white text-sm text-gray-500 dark:bg-zinc-800 dark:text-gray-100">
               {" "}
               Some of my{" "}
-              <span className="text-slate-900 font-semibold">Project</span>
+              <span className="text-slate-900 dark:text-white font-semibold">Project</span>
             </span>
           </div>
         </div>

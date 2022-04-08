@@ -34,8 +34,8 @@ export default function PostPage({ frontmatter, content }) {
       <Head>
         <title>{frontmatter.title}</title>
       </Head>
-      <div className="prose w-full">
-        <h2 className="text-gray-900">{frontmatter.title}</h2>
+      <div className="prose w-full dark:prose-invert">
+        <h2 className="text-gray-900 dark:text-white">{frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         <Link href={"/post"}><a className="pb-6">Go back</a></Link>
       </div>
