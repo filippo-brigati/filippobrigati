@@ -1,7 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import PostLink from "../../components/PostLink";
-import Head from "next/head";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -26,12 +26,17 @@ export async function getStaticProps() {
 export default function PostHome({ posts }) {
   return (
     <>
-      <Head>
-        <title>Filippo Brigati | Blog</title>
-      </Head>
-      {posts.map(({ slug, frontmatter }) => (
-        <PostLink key={slug} slug={slug} frontmatter={frontmatter}></PostLink>
-      ))}
+      <div className="flex flex-col h-screen justify-center items-center bg-white dark:bg-zinc-800">
+        <div className="mb-3 dark:text-white">
+        Go back{" "}
+        <Link href="/" passHref>
+          <a className="underline decoration-pink-500/60">home</a>
+        </Link>
+        </div>
+        {posts.map(({ slug, frontmatter }) => (
+          <PostLink key={slug} slug={slug} frontmatter={frontmatter}></PostLink>
+        ))}
+      </div>
     </>
   );
 }
