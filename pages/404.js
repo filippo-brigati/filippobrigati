@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function errorPage() {
   return (
     <>
-      <div className="h-80 flex flex-col justify-center items-center">
+      <div className="h-screen w-screen flex flex-col justify-center items-center">
         <h1 className="font-regular text-sm text-gray-500">
           <span className="text-red-600 dark:text-red-400">404</span> - Page Not
           Found
