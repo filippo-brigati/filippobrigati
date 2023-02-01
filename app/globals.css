@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection {
+    background: #e2e8f0;
+}
+
+::selection {
+    background: #e2e8f0;
+}
