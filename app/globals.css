@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 ::-moz-selection {
-    background: #e2e8f0;
+    background: #dee2e6;
 }
 
 ::selection {
-    background: #e2e8f0;
+    background: #dee2e6;
 }
